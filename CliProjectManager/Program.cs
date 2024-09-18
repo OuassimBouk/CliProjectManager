@@ -33,7 +33,7 @@ class Program
                     //newProject.ViewProjects();
                     break;
                 case "3":
-                    //newProject.SearchProjects();
+                    //newProject.SearchProjects(); 
                     break;
                 case "4":
                     return;
