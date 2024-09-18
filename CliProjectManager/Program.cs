@@ -22,6 +22,12 @@ class Program
             string choice = Console.ReadLine();
 
             Console.WriteLine(choice);
+
+            if (choice == "1")
+            {
+                ProjectModel newProject = new ProjectModel();
+                newProject.CreateProject();
+            }
         }
     }
 }
