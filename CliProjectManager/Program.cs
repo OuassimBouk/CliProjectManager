@@ -23,10 +23,23 @@ class Program
 
             Console.WriteLine(choice);
 
-            if (choice == "1")
+            ProjectModel newProject = new ProjectModel();
+            switch(choice)
             {
-                ProjectModel newProject = new ProjectModel();
-                newProject.CreateProject();
+                case "1":
+                    newProject.CreateProject();
+                    break;
+                case "2":
+                    //newProject.ViewProjects();
+                    break;
+                case "3":
+                    //newProject.SearchProjects();
+                    break;
+                case "4":
+                    return;
+                default:
+                    Console.WriteLine("\nWrong input, please try again by choosing one of the numbers listed bellow.");
+                    break;
             }
         }
     }
